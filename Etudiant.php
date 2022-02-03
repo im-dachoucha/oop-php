@@ -50,8 +50,13 @@ class Etudiant extends Personne
     // todo custom methods
     public function calculer_moyenne()
     {
+        $som = 0;
+        $coeff = 0;
         foreach ($this->notes as $note) {
-            var_dump($note);
+            $som += $note[0] * $note[1];
+            $coeff += $note[1];
+            // var_dump($note);
         }
+        return $som / $coeff;
     }
 }

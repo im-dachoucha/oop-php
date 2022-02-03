@@ -20,8 +20,9 @@ try {
     // echo $etudiant->to_string();
     // echo $p1->to_string();
 
-    var_dump($p1);
-    var_dump($e1);
+    // var_dump($p1);
+    // var_dump($e1);
+    echo $e1->calculer_moyenne();
 
     // var_dump($etudiant);
 
